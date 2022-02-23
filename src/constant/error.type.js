@@ -13,5 +13,60 @@ module.exports = {
         code:'10003',
         message:'用户注册错误',
         data:''
+    },
+    userDoesNotExist:{
+        code:'10004',
+        message:'用户不存在',
+        data:''
+    },
+    userLoginError:{
+        code:'10005',
+        message:'用户登录失败',
+        data:''
+    },
+    invalidPassword:{
+        code:'10006',
+        message:'密码不匹配',
+        data:''
+    },
+    tokenExpiredError: {
+        code:'10101',
+        message:'token已过期',
+        data:''
+    },
+    invalidToken: {
+        code:'10102',
+        message:'无效的token',
+        data:''
+    },
+    hasNotAdminPermission:{
+        code:'10103',
+        message:'没有管理员权限',
+        data:''
+    },
+    fileUploadError:{
+        code:10201,
+        message:'上传文件失败',
+        data:''
+    },
+    fileTypeError:{
+        code:10202,
+        message:'上传文件格式不支持',
+        data:''
+    },
+    goodsFormatError:{
+        code:10203,
+        message:'参数格式错误',
+        data:''
+    },
+    publishGoodsError:{
+        code:10204,
+        message:'发布商品错误',
+        data:''
+    },
+    invalidGoodsID:{
+        code:10205,
+        message:'无效的商品id',
+        data:''
     }
 }

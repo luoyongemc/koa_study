@@ -20,7 +20,7 @@ const User = seq.define('zd_user',{
         type:DataTypes.BOOLEAN,
         allowNull:false,
         defaultValue:0,
-        comment:'是否为管理员， 0：不是管理员（默认）；1：是管理员'
+        comment:'是否为管理员, 0:不是管理员(默认);1:是管理员'
     }
 })
 
