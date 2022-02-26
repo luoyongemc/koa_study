@@ -17,7 +17,9 @@ app.use(koaBody({
         //在optionn里的相对路径，不是相对的当前文件，相对process.cwd()
         uploadDir:path.join(__dirname,'../upload'),//path.join获取的是当前文件的相对路径
         keepExtensions:true,//保留扩展名
-    }
+    },
+    strict:false,
+    // parseMethods:['POST','PUT','PATCH','DELETE'],
 }));
 app.use(KoaStatic(path.join(__dirname,'../upload')));
 app.use(parameter(app));

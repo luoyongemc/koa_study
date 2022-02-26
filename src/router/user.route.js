@@ -12,7 +12,7 @@ router.get('/',(ctx,next) => {
 //注册接口
 router.post('/register',userValidator,verifyUser,cryptPassword,register);
 //登录接口
-router.post('/login',auth,userValidator,verifyLogin,login);
+router.post('/login',userValidator,verifyLogin,login);
 
 //修改密码接口
 router.patch('/',auth,cryptPassword,changePassword);
